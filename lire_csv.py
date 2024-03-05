@@ -13,5 +13,9 @@ os.chdir(os.path.dirname(__file__))
 nom_fichier = "fichier_a_lire.csv"
 list_client = []
 
+#with open(nom_fichier,"r") as f_lu:
+    
+
+
 
 

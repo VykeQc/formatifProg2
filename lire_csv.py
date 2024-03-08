@@ -13,7 +13,15 @@ os.chdir(os.path.dirname(__file__))
 nom_fichier = "fichier_a_lire.csv"
 list_client = []
 
-#with open(nom_fichier,"r") as f_lu:
+with open(nom_fichier,"r") as f_lu:
+    f_reader = csv.reader(f_lu)
+    next(f_reader)
+    for line in f_reader:
+        f_reader = line
+        list_client.append(f_reader)
+
+print(list_client)
+
     
 
 
